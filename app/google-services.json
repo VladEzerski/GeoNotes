@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "559636130965",
+    "firebase_url": "https://geonotes-5d8ba.firebaseio.com",
+    "project_id": "geonotes-5d8ba",
+    "storage_bucket": "geonotes-5d8ba.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:559636130965:android:b2a1caaaabda66ab",
+        "android_client_info": {
+          "package_name": "com.ezerski.vladislav.geonotes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "559636130965-vb5h0dmcn4f8krvgcsmdkorjpseprs2j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ezerski.vladislav.geonotes",
+            "certificate_hash": "4567cee3429d2763cfd66d70134cae9a3c3ffeb8"
+          }
+        },
+        {
+          "client_id": "559636130965-kap79i5i8l62mnb88fuauhrr2iirp013.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKJI1frrXBg4zwMOG_fl8OnBpXISM18iw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "559636130965-kap79i5i8l62mnb88fuauhrr2iirp013.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
