@@ -24,7 +24,7 @@ public class NoteAddActivity extends AppCompatActivity{
         setContentView(R.layout.activity_add_note);
 
         btnCreateNote = (Button) findViewById(R.id.btn_create_note);
-        btnSelectNoteColor = (Button) findViewById(R.id.btn_select_note_color);
+        btnSelectNoteColor = (Button) findViewById(R.id.select_note_color);
         newNote = (ImageView) findViewById(R.id.new_note);
 
         btnCreateNote.setOnClickListener(new View.OnClickListener() {
