@@ -10,6 +10,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -27,7 +28,7 @@ public class MainActivity extends Activity {
     private RecyclerView.LayoutManager mLayoutManager;
 
     List<Note> notes = new ArrayList<>();
-
+ 
     public List<Note> initializeData(){
         return notes;
     }
@@ -38,6 +39,15 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
 
         mRecyclerView = findViewById(R.id.recycler_view);
+
+        final ImageView newNote = findViewById(R.id.img_add_note);
+        newNote.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), NoteAddActivity.class);
+                startActivity(intent);
+            }
+        });
 
         mFirebaseAuth = FirebaseAuth.getInstance();
         mFirebaseUser = mFirebaseAuth.getCurrentUser();

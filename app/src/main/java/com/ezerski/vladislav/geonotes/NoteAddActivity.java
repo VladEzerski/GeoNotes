@@ -15,7 +15,7 @@ public class NoteAddActivity extends AppCompatActivity{
     private static final int REQUEST_CODE = 1;
 
     private Button btnCreateNote;
-    private Button btnSelectNoteColor;
+    private View btnSelectNoteColor;
     private ImageView newNote;
 
     @Override
@@ -23,9 +23,9 @@ public class NoteAddActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_note);
 
-        btnCreateNote = (Button) findViewById(R.id.btn_create_note);
-        btnSelectNoteColor = (Button) findViewById(R.id.select_note_color);
-        newNote = (ImageView) findViewById(R.id.new_note);
+        btnCreateNote = findViewById(R.id.btn_create_note);
+        btnSelectNoteColor = findViewById(R.id.select_note_color);
+        newNote = findViewById(R.id.new_note);
 
         btnCreateNote.setOnClickListener(new View.OnClickListener() {
             @Override
