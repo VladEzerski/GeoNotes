@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/sticky_note"
+    android:orientation="vertical">
 
 
     <EditText
@@ -13,6 +15,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="129dp"
         android:ems="10"
+        android:hint="Email"
         android:inputType="textPersonName" />
 
     <EditText
@@ -24,6 +27,7 @@
         android:layout_below="@+id/editText_username_sign_in"
         android:layout_marginTop="21dp"
         android:ems="10"
+        android:hint="Password"
         android:inputType="textPassword" />
 
     <Button
@@ -35,23 +39,4 @@
         android:layout_marginTop="20dp"
         android:text="@string/sign_in" />
 
-    <TextView
-        android:id="@+id/txt_1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editText_password_sign_in"
-        android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/editText_password_sign_in"
-        android:layout_marginBottom="45dp"
-        android:text="@string/don_t_have_an_account_yet" />
-
-    <TextView
-        android:id="@+id/txt_goto_sign_up"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/txt_1"
-        android:layout_alignBottom="@+id/txt_1"
-        android:layout_alignEnd="@+id/editText_password_sign_in"
-        android:layout_alignRight="@+id/editText_password_sign_in"
-        android:text="@string/sign_up" />
 </RelativeLayout>

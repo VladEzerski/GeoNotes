@@ -22,18 +22,10 @@
             android:name=".NoteAddActivity"
             android:screenOrientation="portrait"
             />
-        <!--<activity-->
-            <!--android:name=".SignInActivity"-->
-            <!--android:screenOrientation="portrait"-->
-            <!--/>-->
-        <!--<activity-->
-            <!--android:name=".SignUpActivity"-->
-            <!--android:screenOrientation="portrait"-->
-            <!--/>-->
-        <!--<activity-->
-            <!--android:name=".NoteAddActivity"-->
-            <!--android:screenOrientation="portrait"-->
-            <!--/>-->
+        <activity
+            android:name=".SignInActivity"
+            android:screenOrientation="portrait"
+            />
         <activity
             android:name=".ColorPickerActivity"
             android:screenOrientation="portrait"

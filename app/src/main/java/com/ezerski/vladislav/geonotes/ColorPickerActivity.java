@@ -18,8 +18,8 @@ public class ColorPickerActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.color_picker);
 
-        final Button btn_col_pick = (Button) findViewById(R.id.btn_ColPick);
-        final ColorPickerView colorPicker = (ColorPickerView) findViewById(R.id.colorPickerView);
+        final Button btn_col_pick = findViewById(R.id.btn_ColPick);
+        final ColorPickerView colorPicker = findViewById(R.id.colorPickerView);
 
         colorPicker.setColorListener(new ColorListener() {
             @Override
