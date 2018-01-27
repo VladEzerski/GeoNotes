@@ -8,6 +8,7 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 
 public class NoteAddActivity extends AppCompatActivity{
@@ -17,16 +18,17 @@ public class NoteAddActivity extends AppCompatActivity{
     private Button btnCreateNote;
     private View btnSelectNoteColor;
     private ImageView newNote;
+    private EditText note_body;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_note);
 
-        btnCreateNote = findViewById(R.id.btn_create_note);
-        btnSelectNoteColor = findViewById(R.id.select_note_color);
         newNote = findViewById(R.id.new_note);
+        note_body = findViewById(R.id.editText_note);
 
+        btnCreateNote = findViewById(R.id.btn_create_note);
         btnCreateNote.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -35,6 +37,7 @@ public class NoteAddActivity extends AppCompatActivity{
             }
         });
 
+        btnSelectNoteColor = findViewById(R.id.select_note_color);
         btnSelectNoteColor.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -51,7 +54,8 @@ public class NoteAddActivity extends AppCompatActivity{
         if (requestCode == REQUEST_CODE) {
             int color  = data.getIntExtra("color", Color.BLACK);
             btnSelectNoteColor.getBackground().setColorFilter(color, PorterDuff.Mode.SRC_ATOP);
-            //newNote.getBackground().setColorFilter(color, PorterDuff.Mode.SRC_ATOP);
+            newNote.getBackground().setColorFilter(color, PorterDuff.Mode.SRC_ATOP);
+            btnCreateNote.getBackground().setColorFilter(color, PorterDuff.Mode.SRC_ATOP);
         }
     }
 }
